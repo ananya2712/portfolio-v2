@@ -21,7 +21,7 @@ const subtitle = computed(() => (page.value as { subtitle?: string } | null)?.su
 <template>
   <article v-if="page">
     <header class="mb-6">
-      <h1 class="text-2xl md:text-3xl font-medium text-magenta mb-1 cursor inline-block">
+      <h1 class="text-3xl md:text-5xl font-semibold tracking-tight text-magenta mb-2 cursor inline-block">
         {{ page.title }}
       </h1>
       <p v-if="subtitle" class="text-muted text-sm md:text-base">{{ subtitle }}</p>

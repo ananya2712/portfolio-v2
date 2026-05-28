@@ -11,10 +11,10 @@
   --c-bg: 26 27 38;
   --c-panel: 36 40 59;
   --c-panel-2: 31 35 53;
-  --c-border: 47 51 77;
-  --c-text: 192 202 245;
-  --c-dim: 86 95 137;
-  --c-muted: 154 165 206;
+  --c-border: 60 65 96;
+  --c-text: 234 238 252;
+  --c-dim: 112 122 160;
+  --c-muted: 196 207 233;
   --c-cyan: 125 207 255;
   --c-green: 158 206 106;
   --c-magenta: 187 154 247;
@@ -69,13 +69,13 @@
 }
 
 .prose-terminal :where(h1):not(:where([class~="not-prose"] *)) {
-  @apply text-magenta text-2xl md:text-3xl font-medium mt-8 mb-2;
+  @apply text-magenta text-3xl md:text-5xl font-semibold mt-10 mb-3 tracking-tight;
 }
 .prose-terminal :where(h2):not(:where([class~="not-prose"] *)) {
-  @apply text-cyan text-xl md:text-2xl font-medium mt-8 mb-2;
+  @apply text-cyan text-2xl md:text-3xl font-semibold mt-10 mb-3 tracking-tight;
 }
 .prose-terminal :where(h3):not(:where([class~="not-prose"] *)) {
-  @apply text-yellow text-lg font-medium mt-6 mb-2;
+  @apply text-yellow text-xl md:text-2xl font-semibold mt-8 mb-2 tracking-tight;
 }
 .prose-terminal :where(p):not(:where([class~="not-prose"] *)) {
   @apply text-muted leading-relaxed my-3;

@@ -14,12 +14,11 @@ total 2
 ::
 
 ::terminal-callout{id="peroxide-ml" label="time-sensitive chemical identification tool" tone="info"}
-**Dow · The Data Mine**
+**Dow · The Data Mine (TDM 511)**
 
-- Developed a tool to predict the peroxide-forming proclivity of chemicals using a multi-stage machine-learning pipeline
-- Collected and preprocessed data from 300+ chemicals
-- Trained a multi-stage XGBoost model for accurate predictions
-- Deployed the solution as a web application using R Shiny for a user-friendly interface
+- Worked with corporate mentors to develop a **multi-stage XGBoost model** predicting chemical peroxide formation, using feature engineering on ionic charges and molecular weights paired with systematic feature selection
+- Collected and preprocessed data on 300+ chemicals
+- Deployed the model as a web application in R Shiny for non-technical users
 ::
 
 ::terminal-prompt{cmd="cat tweet-sent.md"}

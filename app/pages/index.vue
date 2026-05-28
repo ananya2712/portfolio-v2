@@ -6,7 +6,7 @@ useHead({
 
 <template>
   <div>
-    <h1 class="text-2xl md:text-3xl font-medium text-magenta mb-1 cursor inline-block">Ananya Uppal</h1>
+    <h1 class="text-3xl md:text-5xl font-semibold tracking-tight text-magenta mb-2 cursor inline-block">Ananya Uppal</h1>
     <p class="text-muted text-sm md:text-base mb-2">explainable ai · cybersecurity · purdue ms</p>
     <div class="h-px bg-border my-6" />
 
@@ -32,16 +32,13 @@ useHead({
     <TerminalPrompt cmd="cat roles_of_interest.txt" />
     <div class="flex flex-wrap gap-2 mt-3 pl-2">
       <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded border border-green/30 bg-green/10 text-green text-sm">
-        <span class="text-green/70">▌</span> Software Engineer 
+        <span class="text-green/70">▌</span> ML Engineer
       </span>
       <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded border border-green/30 bg-green/10 text-green text-sm">
-        <span class="text-green/70">▌</span> Data / ML Platform Engineer
+        <span class="text-green/70">▌</span> Applied AI / Research Engineer
       </span>
       <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded border border-green/30 bg-green/10 text-green text-sm">
-        <span class="text-green/70">▌</span> Security Engineer
-      </span>
-      <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded border border-green/30 bg-green/10 text-green text-sm">
-        <span class="text-green/70">▌</span> Data Scientist / Applied ML
+        <span class="text-green/70">▌</span> Security Engineer (Product / AppSec)
       </span>
     </div>
 

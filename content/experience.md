@@ -16,38 +16,37 @@ total 4
 ::
 
 ::terminal-callout{id="leen" label="data science intern" tone="info"}
-**Leen** · Jul 2025 – Aug 2025
+**Leen, San Francisco, CA** · Jul 2025 – Aug 2025
 
-- Designed connectors for API-based data models to map and consolidate GRC entity, evidence, assessment, and controls data from ServiceNow GRC, OneTrust, and Archer
-- Worked directly with customers to introduce new data fields for connector integrations in a fast-paced startup environment
+- Designed **3 API-based data connectors** consolidating GRC entity, evidence, assessments, and controls data from ServiceNow GRC, OneTrust, and Archer into unified data models
+- Contributed quickly to customer onboarding and revenue generation in a fast-paced startup environment
 ::
 
 ::terminal-prompt{cmd="cat palo-alto.md"}
 ::
 
 ::terminal-callout{id="palo-alto" label="software engineer" tone="info"}
-**Palo Alto Networks, Bengaluru** · Aug 2023 – Aug 2024
+**Palo Alto Networks, Bengaluru** · Aug 2023 – Jul 2024
 
-- Developed automated functional testing workflows using Jenkins for VM- and hardware-based Panorama and Firewall devices
-- Strengthened the automated test suite to ensure critical certificate values are updated across 8 OS releases and 12 million devices in the field
+- Built automated testing pipelines using Jenkins across VM and hardware Panorama and Firewall devices (3k, 5k, 7k series), **improving code coverage from 23% to 78%** for logging/reporting infrastructure
+- Developed a sanity test suite to validate root certificate integrity across 8 PanOS releases and 12 million HW/VM/SW firewall and management-infrastructure devices
 ::
 
 ::terminal-callout{label="software engineer intern" tone="info"}
-**Palo Alto Networks** · Jan 2023 – Aug 2023
+**Palo Alto Networks** · Jan 2023 – Jul 2023
 
-- Reduced the automation backlog by 30% by integrating test cases into regression suites using pytest and gnmic
-- Expanded REST APIs across 6+ PanOS releases to support PanOS UI interaction using Selenium for streaming telemetry
+- Reduced automation backlog by 30% via regression-suite integration using pytest and gnmic
+- Expanded REST APIs across six PanOS releases using Selenium for streaming telemetry
 ::
 
 ::terminal-prompt{cmd="cat nasdaq.md"}
 ::
 
 ::terminal-callout{id="nasdaq" label="software engineer intern" tone="info"}
-**Nasdaq** · Jun 2022 – Jul 2022
+**Nasdaq, Bengaluru** · Jun 2022 – Jul 2022
 
-- Conducted performance analysis of enterprise blockchains — VMware Blockchain, Hyperledger Fabric/Besu, R3 Corda — for proprietary use cases
-- Used Hyperledger Caliper for comprehensive evaluation across 17+ criteria
-- Analyzed blockchain performance metrics and provided optimization recommendations
+- Conducted performance-based analysis of enterprise blockchains across **17+ criteria** — VMware Blockchain, Hyperledger Fabric, Hyperledger Besu, and R3 Corda — for proprietary use cases
+- Used Hyperledger Caliper as the evaluation framework across throughput, latency, and resource-utilization metrics
 ::
 
 ::terminal-prompt{cmd="cat purdue-ta.md"}

@@ -7,7 +7,7 @@ subtitle: thesis · publications
 ::
 
 total 3
-- `thesis.md` &nbsp;&nbsp;&nbsp;data-valuation for ML data-quality repair · ongoing
+- `thesis.md` &nbsp;&nbsp;&nbsp;data valuation for label error detection in ML pipelines · ongoing
 - `ccce23.md` &nbsp;&nbsp;interpretable hybrid recommender · CCCE'23, Stockholm
 - `isda22.md` &nbsp;&nbsp;RePI: research-paper impact analysis · ISDA'22
 
@@ -15,13 +15,11 @@ total 3
 ::
 
 ::terminal-callout{id="thesis" label="m.s. thesis · in progress" tone="note"}
-**Responsible Data Science (RDS) Lab, Purdue University** · Aug 2024 – Present
+**Data Valuation for Label Error Detection in ML Pipelines**
+*Responsible Data Science (RDS) Lab, Purdue University · Aug 2024 – Present*
 *Advised by Dr. Romila Pradhan*
 
-Thesis work on the role of data-valuation techniques in detecting and repairing data-quality issues in ML pipelines. Key questions I'm investigating:
-
-- Can data-valuation methods identify erroneous training points?
-- Can correcting highly-valued data points improve pipeline accuracy and fairness?
+Developing **Shapley-value-based data-valuation methods** to detect and repair mislabeled training data in ML pipelines, with a focus on improving model **fairness, reliability, and explainability**.
 ::
 
 ::terminal-prompt{cmd="cat ccce23.md"}

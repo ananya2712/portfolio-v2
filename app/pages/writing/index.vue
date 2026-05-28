@@ -5,7 +5,7 @@ useHead({ title: 'writing · Ananya Uppal' })
 <template>
   <article>
     <header class="mb-6">
-      <h1 class="text-2xl md:text-3xl font-medium text-magenta mb-1 cursor inline-block">writing</h1>
+      <h1 class="text-3xl md:text-5xl font-semibold tracking-tight text-magenta mb-2 cursor inline-block">writing</h1>
       <p class="text-muted text-sm md:text-base">technical notes on ai, ml, and cybersecurity</p>
       <div class="h-px bg-border my-6" />
     </header>
