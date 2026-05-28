@@ -2,8 +2,6 @@
 
 Personal site for Ananya Uppal — terminal-styled, Notion-structured.
 
-**Live:** _to be added after first Vercel deploy_
-
 ## Stack
 
 - [Nuxt 4](https://nuxt.com) (Vue 3 + Nitro)

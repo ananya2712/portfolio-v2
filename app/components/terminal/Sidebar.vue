@@ -68,8 +68,8 @@ function isActive(href: string): boolean {
       <div class="text-dim text-xs px-2 mt-6 mb-2">▾ .config/</div>
       <ul class="space-y-0.5">
         <li>
-          <a href="/resume.pdf" target="_blank" rel="noopener" class="flex items-center gap-2 px-2 py-1 rounded transition-colors no-underline text-text hover:bg-panel hover:text-cyan">
-            <span class="text-dim select-none">├──</span><span>resume.pdf</span>
+          <a href="/Ananya_Resume.pdf" target="_blank" rel="noopener" class="flex items-center gap-2 px-2 py-1 rounded transition-colors no-underline text-text hover:bg-panel hover:text-cyan">
+            <span class="text-dim select-none">├──</span><span>Ananya_Resume.pdf</span>
           </a>
         </li>
         <li>

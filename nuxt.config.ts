@@ -15,8 +15,8 @@ export default defineNuxtConfig({
         { name: 'color-scheme', content: 'dark light' },
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
-        { rel: 'alternate icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/png', href: '/face-scan.png' },
+        { rel: 'apple-touch-icon', href: '/face-scan.png' },
       ],
       script: [
         {
