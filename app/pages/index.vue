@@ -45,13 +45,16 @@ useHead({
     <TerminalPrompt cmd="cat currently.txt" />
     <TerminalCallout label="currently" tone="note">
       <p>
-        One-plus year across security and data engineering — most recently a <strong class="text-text">Software Engineer at Palo Alto Networks</strong> on the Next-Generation Firewall team, where I built automated test workflows for VM- and hardware-based Panorama/Firewall devices and hardened the certificate test suite across 8 OS releases and ~12M devices in the field.
+        One-plus year across security and software engineering — most recently a <strong class="text-text">Software Engineer at Palo Alto Networks</strong> on the Next-Generation Firewall team, where I built automated test workflows for VM- and hardware-based Panorama/Firewall devices and hardened the certificate test suite across 8 OS releases and ~12M devices in the field.
       </p>
       <p class="mt-3">
-        Before that, internships at <strong class="text-text">Leen</strong> (data-science intern designing GRC connectors for ServiceNow, OneTrust, and Archer), <strong class="text-text">Nasdaq</strong> (blockchain-performance analysis of VMware Blockchain, Hyperledger Fabric/Besu, and R3 Corda using Hyperledger Caliper), and an earlier rotation at <strong class="text-text">Palo Alto Networks</strong> cutting the automation backlog by 30% with pytest, gnmic, and Selenium-driven REST APIs across 6+ PanOS releases.
+        Before that, I worked as an Intern at <strong class="text-text">Leen</strong> (data-science intern designing GRC connectors for ServiceNow, OneTrust, and Archer) and <strong class="text-text">Nasdaq</strong> (blockchain-performance analysis of VMware Blockchain, Hyperledger Fabric/Besu, and R3 Corda using Hyperledger Caliper).
       </p>
       <p class="mt-3">
-        At Purdue I'm a <strong class="text-text">Graduate Teaching Assistant</strong> for CNIT 323 (Basic Cyberforensics), CNIT 392 (Enterprise Data Management), and CNIT 175 (Intro to Visual Programming). My thesis with the <strong class="text-text">RDS Lab</strong> looks at data-valuation methods for ML data-quality repair — but I'm equally focused on production systems and security tooling.
+        My first stint at <strong class="text-text">Palo Alto Networks</strong> was a 7-month Software Engineer internship on the same NGFW team (Jan – Jul 2023), where I cut the automation backlog by <strong class="text-text">30%</strong> through pytest- and gnmic-based regression integration, and expanded Selenium-driven REST APIs across six PanOS releases to power streaming-telemetry workflows. That rotation led directly into the full-time NGFW role above.
+      </p>
+      <p class="mt-3">
+        At Purdue I'm a <strong class="text-text">Graduate Teaching Assistant</strong> for CNIT 323 (Basic Cyberforensics), CNIT 392 (Enterprise Data Management), and CNIT 175 (Intro to Visual Programming). My thesis with the <strong class="text-text">RDS Lab</strong> looks at data-valuation methods for ML data-quality repair. I'm equally focused on production systems and security tooling.
       </p>
     </TerminalCallout>
 

@@ -27,14 +27,12 @@ Developing **Shapley-value-based data-valuation methods** to detect and repair m
 
 ::terminal-callout{id="ccce23" label="ccce'23 · stockholm" tone="info"}
 **An Interpretable Hybrid Recommender Based on Graph Convolution to Address Serendipity**
-*Presented in Stockholm, Sweden · March 2023*
+*Published at CCCE'23 · Stockholm, March 2023* — [Springer link](https://link.springer.com/chapter/10.1007/978-3-031-27440-4_20)
 
-A novel approach combining graph convolutional networks with traditional recommendation methods to enhance serendipity.
+Two novel contributions built on top of a 4-model hybrid graph-convolutional recommender:
 
-- Developed a 4-model hybrid architecture integrating graph convolutional networks
-- Formulated a new distance-based metric for measuring recommendation serendipity
-- Enhanced interpretability through KNN feature-importance analysis
-- Improved recommendation diversity while maintaining accuracy
+- A new **distance-based metric** for quantifying recommendation serendipity, going beyond standard diversity/novelty proxies
+- **KNN feature-importance analysis** layered on the hybrid to make its recommendations interpretable to end users
 ::
 
 ::terminal-prompt{cmd="cat isda22.md"}
@@ -42,14 +40,12 @@ A novel approach combining graph convolutional networks with traditional recomme
 
 ::terminal-callout{id="isda22" label="isda'22" tone="info"}
 **RePI: Research Paper Impact Analysis**
-*Presented December 2022*
+*Published at ISDA'22 · December 2022* — [Springer link](https://link.springer.com/chapter/10.1007/978-3-031-35299-7_3)
 
-A web application for analyzing research-paper impact using advanced metrics and visualization.
+A web application for analyzing research-paper impact, built around a novel **impact-factor ratio** — a new metric for publication influence that goes beyond raw citation counts.
 
-- Built an intuitive web interface with Python + Streamlit
-- Integrated with the Semantic Scholar API for comprehensive paper analysis
-- Developed a novel impact-factor ratio for measuring publication influence
-- Implemented interactive visualizations for impact metrics
+- Implemented the metric and pipeline in Python on top of the Semantic Scholar API
+- Built an interactive interface in Streamlit for exploring per-paper and per-author impact
 ::
 
 ::terminal-prompt{cmd="exit"}
