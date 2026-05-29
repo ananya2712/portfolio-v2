@@ -32,10 +32,10 @@ useHead({
     <TerminalPrompt cmd="cat roles_of_interest.txt" />
     <div class="flex flex-wrap gap-2 mt-3 pl-2">
       <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded border border-green/30 bg-green/10 text-green text-sm">
-        <span class="text-green/70">▌</span> ML Engineer
+        <span class="text-green/70">▌</span> Software Engineer (ML / Backend)
       </span>
       <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded border border-green/30 bg-green/10 text-green text-sm">
-        <span class="text-green/70">▌</span> Applied AI / Research Engineer
+        <span class="text-green/70">▌</span> Applied AI / Research Engineer 
       </span>
       <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded border border-green/30 bg-green/10 text-green text-sm">
         <span class="text-green/70">▌</span> Security Engineer (Product / AppSec)
