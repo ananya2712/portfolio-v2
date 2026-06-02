@@ -49,7 +49,7 @@ const navTree: NavNode[] = [
 ]
 
 const externalLinks: ExternalLink[] = [
-  { label: 'Ananya_Resume.pdf', href: '/Ananya_Resume.pdf', hint: 'open resume in new tab' },
+  { label: 'resume', href: '/Ananya_Uppal_Resume.pdf', hint: 'open resume in new tab' },
   { label: 'github', href: 'https://github.com/ananya2712', hint: 'github.com/ananya2712' },
   { label: 'linkedin', href: 'https://www.linkedin.com/in/ananya-uppal-a40915214/', hint: 'linkedin profile' },
   { label: 'email', href: 'mailto:ananya.uppal.in@gmail.com', hint: 'ananya.uppal.in@gmail.com' },
