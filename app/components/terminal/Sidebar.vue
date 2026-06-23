@@ -145,7 +145,7 @@ function onResizeKey(e: KeyboardEvent): void {
       <div class="text-dim text-xs px-2 mt-6 mb-2">▾ .config/</div>
       <ul class="space-y-0.5">
         <li>
-          <a href="/Ananya_Uppal_Resume.pdf" target="_blank" rel="noopener" class="flex items-center gap-2 px-2 py-1 rounded transition-colors no-underline text-text hover:bg-panel hover:text-cyan whitespace-nowrap">
+          <a href="/Ananya_Resume_Engg.pdf" target="_blank" rel="noopener" class="flex items-center gap-2 px-2 py-1 rounded transition-colors no-underline text-text hover:bg-panel hover:text-cyan whitespace-nowrap">
             <span class="text-dim select-none">├──</span><span class="truncate">resume</span>
           </a>
         </li>
