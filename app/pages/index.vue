@@ -45,7 +45,7 @@ useHead({
     <TerminalPrompt cmd="cat currently.txt" />
     <TerminalCallout label="currently" tone="note">
       <p>
-        One-plus year across security and software engineering, most recently a <strong class="text-text">Software Engineer at Palo Alto Networks</strong> on the Next-Generation Firewall team, where I built automated test workflows for VM- and hardware-based Panorama/Firewall devices and hardened the certificate test suite across 8 OS releases and ~12M devices in the field.
+        1.5 years of experience across security and software engineering, most recently a <strong class="text-text">Software Engineer at Palo Alto Networks</strong> on the Next-Generation Firewall team, where I built automated test workflows for VM- and hardware-based Panorama/Firewall devices and hardened the certificate test suite across 8 OS releases and ~12M devices in the field.
       </p>
       <p class="mt-3">
         Last summer, I worked as a <strong class="text-text">Data Science Intern at Leen</strong> (designing GRC connectors for ServiceNow, OneTrust, and Archer) and in Summer of 2022, I <strong class="text-text">interned at Nasdaq</strong> (blockchain-performance analysis of VMware Blockchain, Hyperledger Fabric/Besu, and R3 Corda using Hyperledger Caliper).
