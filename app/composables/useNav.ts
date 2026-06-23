@@ -44,7 +44,14 @@ const navTree: NavNode[] = [
       { kind: 'file', label: 'tweet-sent.md', href: '/projects#tweet-sent' },
     ],
   },
-  { kind: 'dir', label: 'writing/', href: '/writing', children: [] },
+  {
+    kind: 'dir',
+    label: 'writing/',
+    href: '/writing',
+    children: [
+      { kind: 'file', label: 'data-valuation-shapley.md', href: '/writing/data-valuation-shapley' },
+    ],
+  },
   { kind: 'file', label: 'beyond.md', href: '/beyond' },
 ]
 
