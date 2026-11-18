@@ -2,12 +2,42 @@
 useHead({
   title: 'Ananya Uppal · AI & Cybersecurity',
 })
+
+const { externalLinks, isExternal } = useNav()
+
+// Skills from the engineering resume, plus tools shown in projects on this site / GitHub.
+const skills = [
+  { group: 'languages', items: ['Python', 'Java', 'JavaScript', 'TypeScript', 'SQL', 'C/C++', 'Ruby', 'R', 'MATLAB', 'SAS'] },
+  { group: 'frontend', items: ['React.js', 'Next.js', 'Vue / Nuxt', 'HTML/CSS', 'Tailwind CSS', 'Streamlit', 'R Shiny'] },
+  { group: 'backend / data', items: ['Flask', 'Django', 'REST API development', 'PostgreSQL', 'MongoDB', 'Redis'] },
+  { group: 'cloud / devops', items: ['AWS', 'GCP', 'Docker', 'Linux', 'Git', 'Jenkins'] },
+  { group: 'ai / llm', items: ['LLMs', 'GenAI', 'prompt engineering', 'LLM agents', 'tool calling', 'evals'] },
+  { group: 'ml / big data', items: ['responsible ML/AI', 'scikit-learn', 'XGBoost', 'Spark / PySpark', 'Hadoop', 'Shapley values', 'DataScope', 'CleanLab'] },
+  { group: 'security / testing', items: ['test automation', 'pytest', 'Selenium', 'OSINT', 'threat intel', 'PAN-OS / NGFW'] },
+]
 </script>
 
 <template>
   <div>
     <h1 class="text-3xl md:text-5xl font-semibold tracking-tight text-magenta mb-2 cursor inline-block">Ananya Uppal</h1>
-    <p class="text-muted text-sm md:text-base mb-2">explainable ai · cybersecurity · purdue ms</p>
+    <p class="text-muted text-sm md:text-base mb-2">applied ai · cybersecurity · purdue m.s. '26</p>
+
+    <div class="flex flex-wrap gap-2 mt-4">
+      <a
+        v-for="(l, i) in externalLinks"
+        :key="l.label"
+        :href="l.href"
+        :target="isExternal(l.href) && !l.href.startsWith('mailto:') ? '_blank' : undefined"
+        :rel="isExternal(l.href) && !l.href.startsWith('mailto:') ? 'noopener' : undefined"
+        :title="l.hint"
+        :class="[
+          'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md border text-sm font-medium no-underline transition-colors',
+          i === 0
+            ? 'border-magenta bg-magenta/15 text-magenta hover:bg-magenta/25'
+            : 'border-border bg-panel text-text hover:border-cyan hover:text-cyan',
+        ]"
+      >{{ l.label }}<span class="text-xs opacity-70">{{ i === 0 ? '↓' : '↗' }}</span></a>
+    </div>
     <div class="h-px bg-border my-6" />
 
     <TerminalPrompt cmd="whoami" />
@@ -17,16 +47,16 @@ useHead({
         <span class="inline-flex items-center gap-1 px-1.5 py-0.5 mx-0.5 rounded bg-magenta/15 text-magenta font-semibold border border-magenta/30">
           <span class="text-magenta/70">▌</span> MS CIT
         </span>
-        @ <span class="text-cyan">purdue university</span> · gpa 4.0 / 4.0
+        @ <span class="text-cyan">purdue university</span> · gpa 4.0 / 4.0 · completed aug 2026
       </p>
       <p>
-        <span class="text-dim">&gt;</span> graduating
+        <span class="text-dim">&gt;</span> status
         <span class="inline-flex items-center gap-1 px-1.5 py-0.5 mx-0.5 rounded bg-yellow/15 text-yellow font-semibold border border-yellow/30">
-          <span class="text-yellow/70">▌</span> August 2026
+          <span class="text-yellow/70">▌</span> available now
         </span>
-        · seeking full-time roles
+        · open to full-time roles
       </p>
-      <p><span class="text-dim">&gt;</span> focus: explainable ai, data-quality repair in ml pipelines, cybersecurity</p>
+      <p><span class="text-dim">&gt;</span> focus: llm agents &amp; applied ai, data quality in ml pipelines, cybersecurity</p>
     </div>
 
     <TerminalPrompt cmd="cat roles_of_interest.txt" />
@@ -42,57 +72,44 @@ useHead({
       </span>
     </div>
 
-    <TerminalPrompt cmd="cat currently.txt" />
-    <TerminalCallout title="Currently" tone="note">
-      <p>
-        1.5 years of experience across security and software engineering, most recently a <strong class="text-text">Software Engineer at Palo Alto Networks</strong> on the Next-Generation Firewall team, where I built automated test workflows for VM- and hardware-based Panorama/Firewall devices and hardened the certificate test suite across 8 OS releases and ~12M devices in the field.
-      </p>
-      <p class="mt-3">
-        Last summer, I worked as a <strong class="text-text">Data Science Intern at Leen</strong> (designing GRC connectors for ServiceNow, OneTrust, and Archer) and in Summer of 2022, I <strong class="text-text">interned at Nasdaq</strong> (blockchain-performance analysis of VMware Blockchain, Hyperledger Fabric/Besu, and R3 Corda using Hyperledger Caliper).
-      </p>
-      <p class="mt-3">
-        At Purdue I'm a <strong class="text-text">Graduate Teaching Assistant</strong> for CNIT 323 (Basic Cyberforensics), CNIT 392 (Enterprise Data Management), and CNIT 175 (Intro to Visual Programming). My thesis with the <strong class="text-text">RDS Lab</strong> looks at data-valuation methods for ML data-quality repair. I'm equally focused on production systems and security tooling.
-      </p>
+    <TerminalPrompt cmd="cat summary.txt" />
+    <TerminalCallout title="Summary" org="1.5 yrs industry · M.S. Purdue '26" tone="note">
+      <p>Software engineer working across <strong class="text-text">applied AI, ML data quality and security</strong>. I like systems that are measured, tested and ready to ship.</p>
+      <ul class="mt-3 space-y-2">
+        <li class="flex gap-2"><span class="text-dim shrink-0">─</span><span><strong class="text-text">Palo Alto Networks</strong> · Software Engineer, NGFW team · Jenkins test pipelines across VM and hardware firewalls (code coverage 23% → 78%), certificate test suite across 8 PAN-OS releases and ~12M devices</span></li>
+        <li class="flex gap-2"><span class="text-dim shrink-0">─</span><span><strong class="text-text">Purdue</strong> · M.S. thesis on <NuxtLink to="/research#thesis">data valuation for ML data-quality repair</NuxtLink> · TA for 4 semesters across 3 courses</span></li>
+        <li class="flex gap-2"><span class="text-dim shrink-0">─</span><span><strong class="text-text">Internships</strong> · Leen (2025, GRC data connectors) · Nasdaq (2022, blockchain performance analysis)</span></li>
+      </ul>
     </TerminalCallout>
 
-    <TerminalPrompt cmd="cat highlights.json" />
-    <div class="grid grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] gap-3 mt-3">
-      <div class="border border-border bg-panel rounded-md p-4">
-        <div class="text-xs text-dim mb-1">"education"</div>
-        <div class="text-text">M.S. Computer &amp; Information Technology</div>
-        <div class="text-muted text-sm mt-0.5">Purdue University · GPA 4.0 / 4.0</div>
-      </div>
-      <div class="border border-border bg-panel rounded-md p-4">
-        <div class="text-xs text-dim mb-1">"research"</div>
-        <div class="text-text">Explainable AI</div>
-        <div class="text-muted text-sm mt-0.5">RDS Lab · Dr. Romila Pradhan</div>
-      </div>
-      <div class="border border-border bg-panel rounded-md p-4">
-        <div class="text-xs text-dim mb-1">"industry"</div>
-        <div class="text-text">Palo Alto Networks · Leen · Nasdaq</div>
-        <div class="text-muted text-sm mt-0.5">SWE, NGFW team · Data Science intern · Blockchain perf</div>
-      </div>
-      <div class="border border-border bg-panel rounded-md p-4">
-        <div class="text-xs text-dim mb-1">"availability"</div>
-        <div class="text-text">Graduating August 2026</div>
-        <div class="text-muted text-sm mt-0.5">Open to full-time AI &amp; security roles</div>
+    <TerminalPrompt cmd="cat skills.json" />
+    <div class="border border-border bg-panel rounded-md px-4 md:px-5 py-4 space-y-3">
+      <div v-for="g in skills" :key="g.group" class="flex flex-col md:flex-row md:items-baseline gap-1.5 md:gap-4">
+        <div class="text-sm text-cyan md:w-40 shrink-0 whitespace-nowrap">"{{ g.group }}"</div>
+        <div class="flex flex-wrap gap-1.5">
+          <span
+            v-for="item in g.items"
+            :key="item"
+            class="text-xs md:text-sm px-2 py-0.5 rounded border border-border bg-bg/40 text-muted"
+          >{{ item }}</span>
+        </div>
       </div>
     </div>
 
     <TerminalPrompt cmd="cat education.md" />
     <TerminalCallout id="purdue" title="M.S. Computer &amp; Information Technology" org="Purdue University" dates="Fall 2024 – Summer 2026" location="West Lafayette, IN · GPA 4.0 / 4.0" tone="success" tags="responsible data science, it data analytics, hci, research methods, ai, social engineering &amp; cybersecurity">
-      <p>Thesis in the <strong class="text-text">Responsible Data Science (RDS) Lab</strong> with Dr. Romila Pradhan on data valuation for ML data-quality repair.</p>
+      <p>Thesis in the <strong class="text-text">Responsible Data Science (RDS) Lab</strong> with Dr. Romila Pradhan: <NuxtLink to="/research#thesis">data valuation techniques to detect and repair data quality issues in ML pipelines</NuxtLink>.</p>
     </TerminalCallout>
-    <TerminalCallout id="pes" title="B.Tech Computer Science &amp; Engineering" org="PES University" dates="Fall 2019 – Spring 2023" location="Bengaluru, India · GPA 9.06 / 10" tone="success">
+    <TerminalCallout id="pes" title="B.Tech Computer Science &amp; Engineering" org="PES University" dates="Fall 2019 – Spring 2023" location="Bengaluru, India · GPA 9.06 / 10" tone="success" tags="big data, natural language processing, information retrieval, network analysis, dbms, object-oriented design">
       <p>6-time <strong class="text-text">MRD Scholar</strong> — 40% tuition waiver for the top 20% of students.</p>
+      <p class="mt-2">Club member of <strong class="text-text">ACM-Women</strong> and <strong class="text-text">The Changemaker's Society</strong> — organised and mentored 3 hackathons/ideathons.</p>
     </TerminalCallout>
 
     <TerminalPrompt cmd="ls -la ./about" />
     <TerminalToggle summary="about_me.md">
-      <p>I'm a graduate student in Computer &amp; Information Technology at <strong class="text-text">Purdue University</strong>, West Lafayette. As a member of the <strong class="text-text">Responsible Data Science (RDS) Lab</strong>, my thesis work with Dr. Romila Pradhan focuses on Explainable AI — specifically how data-valuation techniques can detect and repair data-quality issues in machine-learning pipelines.</p>
-      <p class="mt-3">I've been a <strong class="text-text">Graduate Teaching Assistant</strong> for three semesters across CNIT 323: Basic Cyberforensics, CNIT 392: Enterprise Data Management, and CNIT 175: Introduction to Visual Programming. Before Purdue, I spent a year as a <strong class="text-text">Software Engineer at Palo Alto Networks</strong> on the Next-Generation Firewall team, and interned at <strong class="text-text">Leen</strong>, <strong class="text-text">Nasdaq</strong>, and Palo Alto Networks. That mix of research and production engineering shapes how I work: rigorously, but with an eye on what actually ships.</p>
+      <p>I completed my M.S. in Computer &amp; Information Technology at <strong class="text-text">Purdue University</strong>, West Lafayette, in August 2026. As a member of the <strong class="text-text">Responsible Data Science (RDS) Lab</strong>, my thesis work with Dr. Romila Pradhan focused on how data-valuation techniques can detect and repair data-quality issues in machine-learning pipelines.</p>
+      <p class="mt-3">I was a <strong class="text-text">Graduate Teaching Assistant</strong> for four semesters across three courses — CNIT 323: Basic Cyberforensics, CNIT 392: Enterprise Data Management, and CNIT 175: Introduction to Visual Programming. Before Purdue, I spent a year as a <strong class="text-text">Software Engineer at Palo Alto Networks</strong> on the Next-Generation Firewall team, and interned at <strong class="text-text">Leen</strong>, <strong class="text-text">Nasdaq</strong>, and Palo Alto Networks. That mix of research and production engineering shapes how I work: rigorously, but with an eye on what actually ships.</p>
     </TerminalToggle>
-
 
     <TerminalToggle summary="beyond_work.md">
       <p>Away from the screen, I'm a classically trained <strong class="text-text">Hindustani Classical vocalist</strong> and sang with the band <em class="text-cyan not-italic">Tin Pan Alley</em> during my undergrad. I also love films and travelling.</p>

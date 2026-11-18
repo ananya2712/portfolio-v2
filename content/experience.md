@@ -35,7 +35,7 @@ subtitle: industry · academic · 4 entries
 ::terminal-prompt{cmd="cat purdue-ta.md"}
 ::
 
-::terminal-callout{id="purdue-ta" title="Graduate Teaching Assistant" org="Purdue University" dates="Fall 2024 – Present" location="West Lafayette, IN" tone="success"}
+::terminal-callout{id="purdue-ta" title="Graduate Teaching Assistant" org="Purdue University" dates="Aug 2024 – Aug 2026" location="West Lafayette, IN · 4 semesters, 3 courses" tone="success"}
 - **CNIT 323** — Basic Cyberforensics
 - **CNIT 392** — Enterprise Data Management
 - **CNIT 175** — Introduction to Visual Programming
