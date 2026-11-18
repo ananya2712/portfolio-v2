@@ -83,18 +83,24 @@ const skills = [
     </TerminalCallout>
 
     <TerminalPrompt cmd="cat skills.json" />
-    <div class="border border-border bg-panel rounded-md px-4 md:px-5 py-4 space-y-3">
-      <div v-for="g in skills" :key="g.group" class="flex flex-col md:flex-row md:items-baseline gap-1.5 md:gap-4">
-        <div class="text-sm text-cyan md:w-40 shrink-0 whitespace-nowrap">"{{ g.group }}"</div>
-        <div class="flex flex-wrap gap-1.5">
-          <span
-            v-for="item in g.items"
-            :key="item"
-            class="text-xs md:text-sm px-2 py-0.5 rounded border border-border bg-bg/40 text-muted"
-          >{{ item }}</span>
+    <TerminalCallout id="skills" title="Skills" org="languages · frameworks · tools" tone="info">
+      <dl class="divide-y divide-border/60 -my-1">
+        <div
+          v-for="g in skills"
+          :key="g.group"
+          class="grid grid-cols-1 sm:grid-cols-[9.5rem_1fr] gap-x-5 gap-y-2 py-3 first:pt-1 last:pb-1"
+        >
+          <dt class="text-sm font-medium text-cyan sm:pt-1">{{ g.group }}</dt>
+          <dd class="flex flex-wrap gap-1.5">
+            <span
+              v-for="item in g.items"
+              :key="item"
+              class="text-xs md:text-sm px-2 py-0.5 rounded border border-border bg-bg/40 text-text"
+            >{{ item }}</span>
+          </dd>
         </div>
-      </div>
-    </div>
+      </dl>
+    </TerminalCallout>
 
     <TerminalPrompt cmd="cat education.md" />
     <TerminalCallout id="purdue" title="M.S. Computer &amp; Information Technology" org="Purdue University" dates="Fall 2024 – Summer 2026" location="West Lafayette, IN · GPA 4.0 / 4.0" tone="success" tags="responsible data science, it data analytics, hci, research methods, ai, social engineering &amp; cybersecurity">
