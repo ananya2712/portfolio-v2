@@ -6,13 +6,9 @@ defineProps<{
 </script>
 
 <template>
-  <div class="flex items-baseline gap-2 mt-10 mb-3 text-base md:text-lg flex-wrap">
-    <span class="text-magenta">ananya</span>
-    <span class="text-dim">@</span>
-    <span class="text-cyan">purdue</span>
-    <span class="text-dim">:</span>
-    <span class="text-yellow">{{ cwd ?? '~' }}</span>
-    <span class="text-text">$</span>
-    <span class="text-green font-semibold">{{ cmd }}</span>
+  <!-- Section divider: kept small and dim so card headings carry the hierarchy. -->
+  <div class="flex items-baseline gap-1.5 mt-10 mb-2 text-xs md:text-sm flex-wrap text-dim">
+    <span>ananya@purdue:{{ cwd ?? '~' }}$</span>
+    <span class="text-green">{{ cmd }}</span>
   </div>
 </template>

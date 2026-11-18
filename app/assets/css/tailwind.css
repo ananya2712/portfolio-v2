@@ -11,16 +11,16 @@
   --c-bg: 26 27 38;
   --c-panel: 36 40 59;
   --c-panel-2: 31 35 53;
-  --c-border: 60 65 96;
-  --c-text: 234 238 252;
-  --c-dim: 112 122 160;
-  --c-muted: 196 207 233;
-  --c-cyan: 125 207 255;
-  --c-green: 158 206 106;
-  --c-magenta: 187 154 247;
-  --c-yellow: 224 175 104;
-  --c-red: 247 118 142;
-  --c-blue: 122 162 247;
+  --c-border: 74 80 116;
+  --c-text: 246 248 255;
+  --c-dim: 154 164 200;
+  --c-muted: 222 228 245;
+  --c-cyan: 140 216 255;
+  --c-green: 172 218 122;
+  --c-magenta: 198 170 255;
+  --c-yellow: 236 190 120;
+  --c-red: 255 135 158;
+  --c-blue: 142 180 255;
   color-scheme: dark;
 }
 
@@ -78,13 +78,13 @@
   @apply text-yellow text-xl md:text-2xl font-semibold mt-8 mb-2 tracking-tight;
 }
 .prose-terminal :where(p):not(:where([class~="not-prose"] *)) {
-  @apply text-muted leading-relaxed my-3;
+  @apply text-muted text-[15px] md:text-base leading-7 my-4;
 }
 .prose-terminal :where(ul):not(:where([class~="not-prose"] *)) {
   @apply my-3 pl-5 space-y-1;
 }
 .prose-terminal :where(li):not(:where([class~="not-prose"] *)) {
-  @apply text-muted list-none relative;
+  @apply text-muted text-[15px] md:text-base leading-7 list-none relative;
 }
 .prose-terminal :where(li):not(:where([class~="not-prose"] *))::before {
   content: "─";
@@ -101,3 +101,8 @@
 .prose-terminal :where(hr):not(:where([class~="not-prose"] *)) {
   @apply border-t border-border my-6;
 }
+
+/* Entry cards: no extra gap above the first / below the last block in the body. */
+.callout-body > :first-child { margin-top: 0; }
+.callout-body :where(p, li) { font-size: inherit; line-height: inherit; }
+.callout-body > :last-child { margin-bottom: 0; }

@@ -43,7 +43,7 @@ useHead({
     </div>
 
     <TerminalPrompt cmd="cat currently.txt" />
-    <TerminalCallout label="currently" tone="note">
+    <TerminalCallout title="Currently" tone="note">
       <p>
         1.5 years of experience across security and software engineering, most recently a <strong class="text-text">Software Engineer at Palo Alto Networks</strong> on the Next-Generation Firewall team, where I built automated test workflows for VM- and hardware-based Panorama/Firewall devices and hardened the certificate test suite across 8 OS releases and ~12M devices in the field.
       </p>
@@ -79,26 +79,20 @@ useHead({
       </div>
     </div>
 
+    <TerminalPrompt cmd="cat education.md" />
+    <TerminalCallout id="purdue" title="M.S. Computer &amp; Information Technology" org="Purdue University" dates="Fall 2024 – Summer 2026" location="West Lafayette, IN · GPA 4.0 / 4.0" tone="success" tags="responsible data science, it data analytics, hci, research methods, ai, social engineering &amp; cybersecurity">
+      <p>Thesis in the <strong class="text-text">Responsible Data Science (RDS) Lab</strong> with Dr. Romila Pradhan on data valuation for ML data-quality repair.</p>
+    </TerminalCallout>
+    <TerminalCallout id="pes" title="B.Tech Computer Science &amp; Engineering" org="PES University" dates="Fall 2019 – Spring 2023" location="Bengaluru, India · GPA 9.06 / 10" tone="success">
+      <p>6-time <strong class="text-text">MRD Scholar</strong> — 40% tuition waiver for the top 20% of students.</p>
+    </TerminalCallout>
+
     <TerminalPrompt cmd="ls -la ./about" />
     <TerminalToggle summary="about_me.md">
       <p>I'm a graduate student in Computer &amp; Information Technology at <strong class="text-text">Purdue University</strong>, West Lafayette. As a member of the <strong class="text-text">Responsible Data Science (RDS) Lab</strong>, my thesis work with Dr. Romila Pradhan focuses on Explainable AI — specifically how data-valuation techniques can detect and repair data-quality issues in machine-learning pipelines.</p>
       <p class="mt-3">I've been a <strong class="text-text">Graduate Teaching Assistant</strong> for three semesters across CNIT 323: Basic Cyberforensics, CNIT 392: Enterprise Data Management, and CNIT 175: Introduction to Visual Programming. Before Purdue, I spent a year as a <strong class="text-text">Software Engineer at Palo Alto Networks</strong> on the Next-Generation Firewall team, and interned at <strong class="text-text">Leen</strong>, <strong class="text-text">Nasdaq</strong>, and Palo Alto Networks. That mix of research and production engineering shapes how I work: rigorously, but with an eye on what actually ships.</p>
     </TerminalToggle>
 
-    <TerminalToggle summary="education.md">
-      <div class="space-y-4">
-        <div>
-          <div class="text-text">Purdue University <span class="text-dim text-xs">— West Lafayette, IN · Fall 2024 – Summer 2026</span></div>
-          <div class="text-muted text-sm">M.S. Computer &amp; Information Technology · <span class="text-green">GPA 4.0 / 4.0</span></div>
-          <div class="text-muted text-sm mt-1">Coursework: Responsible Data Science, IT Data Analytics, HCI, Research Methods, AI, Social Engineering &amp; Cybersecurity.</div>
-        </div>
-        <div>
-          <div class="text-text">PES University <span class="text-dim text-xs">— Bangalore, India · Fall 2019 – Spring 2023</span></div>
-          <div class="text-muted text-sm">B.Tech Computer Science &amp; Engineering · <span class="text-green">GPA 9.06 / 10</span></div>
-          <div class="text-muted text-sm mt-1">6-time MRD Scholar — 40% tuition waiver for the top 20% of students.</div>
-        </div>
-      </div>
-    </TerminalToggle>
 
     <TerminalToggle summary="beyond_work.md">
       <p>Away from the screen, I'm a classically trained <strong class="text-text">Hindustani Classical vocalist</strong> and sang with the band <em class="text-cyan not-italic">Tin Pan Alley</em> during my undergrad. I also love films and travelling.</p>
@@ -125,7 +119,7 @@ useHead({
           <span class="text-blue group-hover:text-cyan">projects/</span>
           <span class="text-dim group-hover:text-cyan">→</span>
         </div>
-        <div class="text-muted text-sm mt-1">ml pipelines · spark · xgboost</div>
+        <div class="text-muted text-sm mt-1">llm agents · scam osint · ml pipelines</div>
       </NuxtLink>
       <NuxtLink to="/writing" class="group border border-border bg-panel hover:border-cyan hover:bg-panel-2 rounded-md p-4 transition-colors no-underline">
         <div class="flex items-center justify-between">

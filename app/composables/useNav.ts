@@ -40,6 +40,8 @@ const navTree: NavNode[] = [
     label: 'projects/',
     href: '/projects',
     children: [
+      { kind: 'file', label: 'agent-orchestrator.md', href: '/projects#agent-orchestrator' },
+      { kind: 'file', label: 'crypto-scam-hunt.md', href: '/projects#crypto-scam-hunt' },
       { kind: 'file', label: 'peroxide-ml.md', href: '/projects#peroxide-ml' },
       { kind: 'file', label: 'tweet-sent.md', href: '/projects#tweet-sent' },
     ],

@@ -39,18 +39,18 @@ function fmtDate(d?: string): string {
         v-for="post in posts"
         :key="post.path"
         :to="post.path"
-        class="group block border border-border bg-panel hover:border-cyan hover:bg-panel-2 rounded-md p-4 transition-colors no-underline"
+        class="group block border border-border border-l-2 border-l-cyan bg-panel hover:border-cyan hover:bg-panel-2 rounded-md px-4 md:px-5 py-4 transition-colors no-underline"
       >
         <div class="flex items-baseline justify-between gap-3">
-          <span class="text-blue group-hover:text-cyan font-medium">{{ post.title }}</span>
-          <span v-if="post.date" class="text-dim text-xs whitespace-nowrap shrink-0">{{ fmtDate(post.date) }}</span>
+          <span class="text-text group-hover:text-cyan text-base md:text-lg font-semibold leading-snug tracking-tight">{{ post.title }}</span>
+          <span v-if="post.date" class="text-muted text-sm whitespace-nowrap shrink-0 tabular-nums">{{ fmtDate(post.date) }}</span>
         </div>
-        <p v-if="post.subtitle" class="text-muted text-sm mt-1">{{ post.subtitle }}</p>
+        <p v-if="post.subtitle" class="text-muted text-sm md:text-[15px] mt-1 leading-7">{{ post.subtitle }}</p>
         <div v-if="post.tags?.length" class="flex flex-wrap gap-1.5 mt-3">
           <span
             v-for="tag in post.tags"
             :key="tag"
-            class="text-xs text-dim border border-border rounded px-1.5 py-0.5"
+            class="text-xs px-2 py-0.5 rounded border border-border bg-bg/40 text-dim"
           >{{ tag }}</span>
         </div>
       </NuxtLink>
